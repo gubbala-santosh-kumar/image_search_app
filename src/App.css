@@ -1,0 +1,80 @@
+
+.App {
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.Search-div{
+  background-image: url('../public/assets/banner.jpg');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: center;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.Search-div h1{
+  font-size: 50px;
+  color: white;
+}
+.Search-Bar{
+  height: 20px;
+  width: 50%;
+  border-radius: 20px 0px 0px 20px;
+  border: 0.0001px solid grey;
+  padding: 10px;
+} 
+.search-btn{
+  height: 41px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: white;
+  border: none;
+  border: 0.0001px solid gray;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+.search-btn:hover{
+  background-color: lightgreen;
+}
+
+@media (max-width: 480px) {
+  .Search-div {
+    padding: 50px 10px; /* Reduce padding on smaller screens */
+  }
+
+  .Search-div h1 {
+    font-size: 30px;
+  }
+
+  .Search-Bar {
+    width: 60%;
+    font-size: 12px;
+  }
+
+  .search-btn {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+}
+
+.fa-solid{
+  color: black;
+  font-size: 14.5px;
+}
+
